@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Encrypted Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="home">
+        <section class="card">
+            <h1>Private Chat</h1>
+            <p>Start an anonymous encrypted session. Share an invitation link with your partner. Close the tab and the chat is forgotten.</p>
+        </section>
+
+        <section class="card">
+            <h2>Create invitation</h2>
+            <button id="createLinkButton">Generate invitation link</button>
+            <div id="inviteInfo" class="invite hidden">
+                <p><strong>Your invitation link:</strong></p>
+                <div class="link-container">
+                    <input id="inviteLink" type="text" readonly class="link-input">
+                    <button id="copyButton" type="button">Copy link</button>
+                </div>
+                <p id="copyMessage" class="copy-message hidden">✓ Copied to clipboard!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

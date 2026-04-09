@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <main class="chat-page">
+        <div class="chat-header">
+            <div>
+                <h1>Encrypted Chat Room</h1>
+                <p id="roomInfo">Loading room...</p>
+            </div>
+            <a class="back-link" href="index.html">← Home</a>
+        </div>
+
+        <section id="joinPanel" class="card hidden">
+            <h2>Join a room</h2>
+            <label>Room ID<input id="joinRoomId" placeholder="room id"></label>
+            <label>Secret token<input id="joinToken" placeholder="secret token"></label>
+            <button id="joinButton">Join room</button>
+        </section>
+
+        <section id="chatPanel" class="chat-card hidden">
+            <div id="statusMessage" class="status">Connecting...</div>
+            <div id="chatLog" class="chat-log" aria-live="polite"></div>
+            <form id="messageForm" class="message-form">
+                <input id="messageInput" type="text" autocomplete="off" placeholder="Type a private message...">
+                <button type="submit">Send</button>
+            </form>
+            <div class="invite-note">
+                Share the room URL and same secret token with your partner. They must open the same link to join.
+            </div>
+        </section>
+    </main>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

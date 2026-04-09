@@ -18,17 +18,17 @@ const io = socketIO(server, {
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from parent directory (frontend files)
-app.use(express.static(path.join(__dirname, '..')));
+// Serve static files from frontend directory
+app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
 // Root route - serve index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'index.html'));
+    res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
 });
 
 // Chat page route
 app.get('/chat.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'chat.html'));
+    res.sendFile(path.join(__dirname, '..', 'frontend', 'chat.html'));
 });
 
 // Store active rooms and participants

@@ -15,17 +15,20 @@ A simple, secure, and anonymous two-person chat application with end-to-end encr
 
 ```
 .
-├── index.html           # Home page - Generate/share invites
-├── chat.html           # Chat page - Real-time encrypted messaging
-├── styles.css          # Styling for both pages
-├── js/
-│   ├── index.js        # Frontend logic for home page
-│   └── chat.js         # Frontend logic with Socket.IO integration
-└── backend/            # Node.js Express server
-    ├── server.js       # Socket.IO server with room management
-    ├── package.json    # Backend dependencies
-    ├── .env           # Environment configuration
-    └── README.md      # Backend setup guide
+├── frontend/           # Frontend application
+│   ├── index.html      # Home page - Generate/share invites
+│   ├── chat.html       # Chat page - Real-time encrypted messaging
+│   ├── styles.css      # Styling for both pages
+│   └── js/
+│       ├── index.js    # Frontend logic for home page
+│       └── chat.js     # Frontend logic with Socket.IO integration
+├── backend/            # Node.js Express server
+│   ├── server.js       # Socket.IO server with room management
+│   ├── package.json    # Backend dependencies
+│   ├── .env           # Environment configuration
+│   ├── .gitignore     # Git ignore rules
+│   └── README.md      # Backend setup guide
+└── README.md          # This file (project overview)
 ```
 
 ## Quick Start

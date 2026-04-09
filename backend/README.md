@@ -18,7 +18,16 @@ backend/
 ├── server.js          # Main Express + Socket.IO server
 ├── package.json       # Dependencies and scripts
 ├── .env              # Environment variables
+├── .gitignore        # Git ignore rules
 └── README.md         # This file
+
+../frontend/          # Frontend application files
+├── index.html
+├── chat.html
+├── styles.css
+└── js/
+    ├── index.js
+    └── chat.js
 ```
 
 ## Prerequisites

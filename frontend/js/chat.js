@@ -17,7 +17,7 @@ class EncryptedChat {
         this.isConnected = false;
         
         // Backend server URL (configure based on environment)
-        this.serverUrl = this.getServerUrl();
+        this.serverUrl = "https://chatbot-end-1.onrender.com";
         
         // DOM elements
         this.joinPanel = document.getElementById('joinPanel');

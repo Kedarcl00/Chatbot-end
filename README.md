@@ -103,7 +103,7 @@ NODE_ENV=development
 
 Requires Web Crypto API and WebSocket support.
 
-## API Reference
+## API References
 
 ### REST Endpoints
 - `GET /api/health` - Server status
